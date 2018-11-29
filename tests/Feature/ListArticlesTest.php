@@ -1,17 +1,15 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Tests\Feature;
 
 use Tests\TestCase;
-use Illuminate\Foundation\Testing\WithFaker;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 
-class ListArticles extends TestCase
+class ListArticlesTest extends TestCase
 {
     /**
      * A basic test example.
-     *
-     * @return void
      */
     public function testExample()
     {
@@ -22,8 +20,8 @@ class ListArticles extends TestCase
             [
                 'title' => 'Articolo 1',
                 'body' => 'Questo è un articolo',
-                'creationDate' => '2018-11-29 00:00:00'
-            ]
+                'creationDate' => '2018-11-29 00:00:00',
+            ],
         ]);
     }
 }
